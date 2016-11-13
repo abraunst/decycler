@@ -4,6 +4,25 @@ This code implements the decycling and dismantling procedures devoloped in
 
 Braunstein, Alfredo, Luca Dall'Asta, Guilhem Semerjian, and Lenka Zdeborová. "Network Dismantling." Proceedings of the National Academy of Sciences, October 18, 2016, 201605083. doi:10.1073/pnas.1605083113, arxiv:1603.08883.
 
+
+
+    @article{braunstein_network_2016,
+	title = {Network dismantling},
+	issn = {0027-8424, 1091-6490},
+	url = {http://www.pnas.org/content/early/2016/10/18/1605083113},
+	doi = {10.1073/pnas.1605083113},
+	abstract = {We study the network dismantling problem, which consists of determining a minimal set of vertices in which removal leaves the network broken into connected components of subextensive size. For a large class of random graphs, this problem is tightly connected to the decycling problem (the removal of vertices, leaving the graph acyclic). Exploiting this connection and recent works on epidemic spreading, we present precise predictions for the minimal size of a dismantling set in a large random graph with a prescribed (light-tailed) degree distribution. Building on the statistical mechanics perspective, we propose a three-stage Min-Sum algorithm for efficiently dismantling networks, including heavy-tailed ones for which the dismantling and decycling problems are not equivalent. We also provide additional insights into the dismantling problem, concluding that it is an intrinsically collective problem and that optimal dismantling sets cannot be viewed as a collection of individually well-performing nodes.},
+	language = {en},
+	urldate = {2016-10-20},
+	journal = {PNAS},
+	author = {Braunstein, Alfredo and Dall’Asta, Luca and Semerjian, Guilhem and Zdeborová, Lenka},
+	month = oct,
+	year = {2016},
+	keywords = {graph fragmentation, Influence maximization, message passing, Percolation, random graphs},
+	pages = {201605083},
+    }
+
+
 Please cite it if you find this code useful!
 
 Compilation:
