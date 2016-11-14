@@ -64,6 +64,6 @@ TWITTER NETWORK
     # wget http://www-levich.engr.ccny.cuny.edu/~min/retweetformat.txt
     # awk '{for (i=2;i<=NF;++i) if ($1>$i) printf "D %i %i\n",$1,$i}' retweetformat.txt | gzip > twitter.txt.gz
     # again, use -jn to run with n threads if you have OMP
-    zcat twitter.txt.gz | ./decycler -o > seeds-twitter.txt
+    zcat < twitter.txt.gz | ./decycler -o > seeds-twitter.txt
     (zcat twitter.txt.gz; cat seeds-twitter.txt) | python treebreaker.py 100 > broken-twitter.txt
     (zcat twitter.txt.gz; cat seeds-twitter.txt broken-twitter.txt ) | ./reverse-greedy -t 100000 > output-twitter.txt
