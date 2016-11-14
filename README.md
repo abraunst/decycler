@@ -50,7 +50,7 @@ RANDOM GRAPH
     cat graph.txt seeds.txt  | python treebreaker.py 100 > broken.txt
     # reintroduce removed nodes as long as component are of size <= 200
     cat graph.txt seeds.txt broken.txt | ./reverse-greedy -t 200 > output.txt
-    # the resulting seed set should be in output.txt in the format:
+    # the resulting seed set should be at the end of output.txt in the format:
     S i
     ...
 
