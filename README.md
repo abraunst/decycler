@@ -31,6 +31,7 @@ You'll need the boost libraries. To compile the multi-threading version,
 you need an openmp-compliant C++ compiler (e.g. g++). In that case just uncomment the 
 corresponding OMP line in the Makefile. 
 Adjust Makefile as needed and issue 
+
     make
 
 
