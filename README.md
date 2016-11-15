@@ -35,6 +35,32 @@ Adjust Makefile as needed and issue
     make
 
 
+Usage
+==========
+
+    $ ./decycler --help
+    Usage: ./decycler <option> ... 
+    where <option> is one or more of:
+    --help                                produce help message
+    -d [ --depth ] arg (=20)              set maximum time depth
+    -t [ --maxit ] arg (=10000)           set maximum number of iterations
+    -D [ --macdec ] arg (=30)             set maximum number of decisional iterations
+    -e [ --tolerance ] arg (=9.99999975e-06)  set convergence tolerance
+    -g [ --rein ] arg (=0.00100000005)    sets reinforcement parameter rein
+    -m [ --mu ] arg (=0.100000001)        sets mu parameter
+    -R [ --rho ] arg (=9.99999975e-06)    sets time damping
+    -r [ --noise ] arg (=1.00000001e-07)  sets noise
+    -s [ --seed ] arg                     sets instance seed
+    -z [ --mseed ] arg                    sets messages seed
+    -o [ --output ]                       outputs optimal seeds to std output
+    -F [ --fields ]                       output fields on convergence
+    -T [ --times ]                        output times on convergence
+    -P [ --plotting ]                     output times while converging
+
+
+
+
+
 How to test:
 ============
 
