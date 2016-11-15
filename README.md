@@ -30,9 +30,8 @@ Compilation:
 You'll need the boost libraries. To compile the multi-threading version, 
 you need an openmp-compliant C++ compiler (e.g. g++). In that case just uncomment the 
 corresponding OMP line in the Makefile. 
-Adjust Makefile as needed and issue 'make'
-
-
+Adjust Makefile as needed and issue 
+    make
 
 
 How to test:
@@ -43,7 +42,8 @@ RANDOM GRAPH
 
     # generate an N=78125, <k>=1.5 graph as in the paper
     python gnp.py 78125 3.5 1 > graph.txt
-    # find a decycling set (use ./decycler to adjust parameters. If you have OMP working -jn would run in n threads)
+    # find a decycling set (use ./decycler to adjust parameters. 
+    # If you have OMP working, ./decycler -jn would run in n threads)
     ./decycler -o < graph.txt > seeds.txt
     # break the decycled graph into components of size <= 100
     cat graph.txt seeds.txt  | python treebreaker.py 100 > broken.txt
@@ -62,7 +62,7 @@ TWITTER NETWORK
     # as follows:
     # wget http://www-levich.engr.ccny.cuny.edu/~min/retweetformat.txt
     # awk '{for (i=2;i<=NF;++i) if ($1>$i) printf "D %i %i\n",$1,$i}' retweetformat.txt | gzip > twitter.txt.gz
-    # again, use -jn to run with n threads if you have OMP
+    # again, use ./decycler -jn to run with n threads if you have OMP
     zcat < twitter.txt.gz | ./decycler -o > seeds-twitter.txt
     (zcat < twitter.txt.gz; cat seeds-twitter.txt) | python treebreaker.py 100 > broken-twitter.txt
     (zcat < twitter.txt.gz; cat seeds-twitter.txt broken-twitter.txt ) | ./reverse-greedy -t 100000 > output-twitter.txt
