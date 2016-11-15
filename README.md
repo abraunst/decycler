@@ -2,8 +2,7 @@
 
 This code implements the decycling and dismantling procedures devoloped in 
 
-Braunstein, Alfredo, Luca Dall'Asta, Guilhem Semerjian, and Lenka Zdeborová. "Network Dismantling." Proceedings of the National Academy of Sciences, October 18, 2016, 201605083. doi:10.1073/pnas.1605083113, arxiv:1603.08883.
-
+Braunstein, A., Dall’Asta, L., Semerjian, G., Zdeborová, L., 2016. Network dismantling. PNAS 201605083. doi:10.1073/pnas.1605083113, arxiv:1603.08883
 
 
     @article{braunstein_network_2016,
